@@ -1,0 +1,22 @@
+\usepackage{xcolor}
+\definecolor{dark}{HTML}{4E4D4E}
+\definecolor{red}{HTML}{ED1C24}
+
+\setbeamertemplate{background}
+{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{omi-template.pdf}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}{\begin{center}\color{dark}\normalsize\insertframetitle\end{center}\vskip-24pt\textcolor{dark}{\hrulefill}}
+\usepackage{helvet}
+\setbeamercolor*{item}{fg=dark}
+\setbeamersize{text margin left=10pt,text margin right=10pt}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\beamer@calculateheadfoot}{\advance\footheight by 4pt}{\advance\footheight by 32pt}{}{}
+\makeatother
+
+\setbeamertemplate{frametitle continuation}{}
+
+\useinnertheme{circles}
+
+
